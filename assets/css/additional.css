@@ -1,0 +1,150 @@
+ul {
+    list-style: none;
+}
+#intro h1, #intro p {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+#self-photo {
+    float: right;
+    width: 30%;
+    height: auto;
+    border: 1px solid aliceblue;
+    margin-right: 5%;
+}
+#intro .title {
+    width: 60%;
+    margin-top: 10%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+}
+  #three {
+      color: white;
+  }
+
+  #three input,
+  #three .button,
+  #three textarea {
+      background: rgba(0, 0, 0, 0.4) !important;
+      border: 1px solid white !important;
+  }
+
+  #three .button:hover {
+      opacity: 0.9;
+  }
+
+@media screen and (max-width: 840px) {
+    #self-photo {
+        width: 200px;
+        float: none;
+        margin-right: 0;
+        margin-top: 15px;
+
+    }
+
+    #intro .title {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    div.inner {
+        text-align: center;
+    }
+}
+
+#project-title {
+    margin-left: 2em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.spotlights>#project-title.active {
+    animation: slide 1.5s forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#project-title.inactive {
+    visibility: hidden;
+}
+
+body.is-preload .spotlights>#project-title {
+    opacity: 0;
+}
+
+.edu-logo {
+    height: 60px;
+    width: 60px;
+}
+
+.skill-logo {
+    height: 50px;
+    width: auto;
+}
+
+.wrapper.style4 {
+    background: rgba(37, 88, 105, 0.918);
+}
+
+.wrapper.style5 {
+    background-image: url(./images/aurora.jpg);
+    background-size: cover;
+}
+
+.features section>p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 980px) {
+
+    .spotlights>section>.content h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.actions {
+        justify-content: center;
+        margin-left: -2em;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 500px) {
+    .features section .icon {
+        left: 20%;
+    }
+
+    .features {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .features+ul.actions {
+        margin-left: 12.5%;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #sidebar nav ul li.big-intro {
+        display: none;
+    }
+
+    #sidebar nav ul li:nth-child(2) {
+        margin: 0;
+    }
+}
+.son{
+    width: 50px;
+}
